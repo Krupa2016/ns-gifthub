@@ -1,0 +1,96 @@
+.footer {
+    background-color: #181818;
+    color: white;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 250px;
+  }
+  
+
+  .footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+  
+
+
+
+
+  .footer-left h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Golden yellow for a premium feel */
+  }
+  
+  .footer-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-left ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-left ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-left ul li a:hover {
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    font-size: 26px;
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #f1c40f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-left {
+      align-items: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
