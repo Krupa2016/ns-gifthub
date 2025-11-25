@@ -1,0 +1,31 @@
+.gallery-container {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 15px;
+  scroll-behavior: smooth;
+  border-radius: 12px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-container::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,121 @@
+.sproduct-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .sproduct-card.hovered {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sproduct-image-container {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .sproduct-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .sproduct-card.hovered .product-image {
+    transform: scale(1.05);
+  }
+  
+  .sproduct-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+  
+  .sproduct-card.hovered .sproduct-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .sadd-to-cart-btn,
+  .squick-view-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+  }
+  
+  .sadd-to-cart-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+  }
+  
+  .squick-view-btn {
+    background-color: white;
+    color: var(--text);
+  }
+  
+  .sadd-to-cart-btn:hover,
+  .squick-view-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .sproduct-info {
+    padding: 15px;
+  }
+  
+  .sproduct-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text);
+  }
+  
+  .sproduct-price {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+  }
+  
+  .sproduct-category {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+  }
+  
+  @media (max-width: 768px) {
+    .sproduct-overlay {
+      position: static;
+      background: none;
+      opacity: 1;
+      transform: none;
+      padding: 10px 0 0;
+    }
+  
+    .sadd-to-cart-btn,
+    .squick-view-btn {
+      width: 100%;
+    }
+  
+    .sproduct-card.hovered {
+      transform: none;
+    }
+  
+    .sproduct-card.hovered .sproduct-image {
+      transform: none;
+    }
+  }
+  

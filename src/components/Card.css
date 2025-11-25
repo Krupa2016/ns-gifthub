@@ -1,0 +1,65 @@
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 16px;
+    border: 0.88px solid;
+    backdrop-filter: saturate(180%) blur(14px);
+    background: rgba(255, 255, 255, 0.308);
+    width: 100%;
+    max-width: 450px;
+    height: 380px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.66);
+  }
+  
+  .card:hover {
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4), 
+                0 6px 15px rgba(0, 0, 0, 0.2); /* Spotlight glow */
+    border-color: rgba(255, 255, 255, 0.6); /* Slightly brightened border */
+  }
+  
+  /* Optional: Slightly brighten the image when hovered */
+  .card:hover .card-img {
+    filter: brightness(1.2);
+  }
+  
+  
+  .card-img {
+    border-radius: 12px;
+    width: 100%;
+    height: 280px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .card-price {
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 18px;
+  }
+  
