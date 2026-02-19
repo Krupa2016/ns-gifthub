@@ -1,12 +1,75 @@
-# React + Vite
+# 🎁 NS GIFTHUB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based customized gift shop where users can personalize products, preview changes in real time, manage their cart, and place unique tailored gift orders securely using Razorpay.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎨 **Live Product Personalization**
+  - Add custom name and number to products (e.g., jerseys)
+  - Real-time preview directly on product image
+  - Instant dynamic updates without page reload
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🛒 **Cart Management**
+  - Add personalized products to cart
+  - Update and remove items
+  - Dynamic pricing based on customization
+
+- 💳 **Razorpay Payment Integration**
+  - Secure online payment
+  - Smooth checkout experience
+  - Order confirmation flow
+
+- ⚡ **Dynamic UI Updates**
+  - React state-driven customization
+  - Live rendering of text overlay on product
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- CSS / Tailwind CSS
+- Razorpay Payment Gateway
+
+---
+
+
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/ns-gifthub.git
+```
+
+2. Navigate into the project folder:
+
+```
+cd ns-gifthub
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start development server:
+
+```
+npm start
+```
+
+---
+
+## 🔐 Razorpay Setup
+
+1. Create a Razorpay account.
+2. Generate your API key.
+3. Add the key to your `.env` file:
+
+
